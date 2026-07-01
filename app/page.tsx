@@ -58,7 +58,7 @@ const Portfolio = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLElement>, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
